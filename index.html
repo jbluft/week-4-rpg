@@ -17,15 +17,110 @@
 </head>
 <body>
 	<!-- Pseudocode starts here
-		
+		-write the HTML layout in bootstrap
+		-load a background image
+		-create the four characters
+		-assign hit points for each character
+		-assign attack points for each character?
+		-use on-click event to set up the select main character
+		-use on-click to select enemy character
+		-set up attack button to deduct from enemy character and then deduct from main character
+		-eliminate character when HP goes to 0 or below
+		-game ends if main character dies;
+		-Play Again?
+		-if enemy character dies, start battle with new character
+		-when all enemy characters die, end the game
+		-reset game?
+		-set win/loss?
+	-->
+
+	<header>
+    		<div>
+       			<div>
+       				<h1>Tribbles RPG</h1>
+       			</div>
+    		</div>
+	</header>
+
+
+	<div id="container" class="row">
+
+
+			<!-- tribbles go here -->
+      <div class="col-lg-12">
+
+		<!-- Gonna write instructions here -->
+		<div class="row">
+			<div class="col-lg-6 introText">Welcome to Tribble Thunderdome! Four tribbles enter, one tribble leaves alive! Select your warrior tribble from the four tribbles below and destroy the other three to become the tribble champion!
+			</div>
+
+		</div>
+
+      	<div class="row">
+			<div class="col-lg-3 player-pic opponents tribbleone"><h3 id="borkName"></h3><img id="borkName" src="assets/images/tribble1.png">
+      		</div>
+			<div class="col-lg-3 player-pic opponents tribbletwo"><h3 id="morkName"></h3><img src="assets/images/tribble2.png">
+      		</div>
+      		<div class="col-lg-3 player-pic opponents tribblethree"><h3 id="zorkName"></h3><img src="assets/images/tribble3.png">
+      		</div>
+			<div class="col-lg-3 player-pic opponents tribblefour"><h3 id="lorkName"></h3><img src="assets/images/tribble4.png">
+      		</div>
+      	</div>
+      </div>
+      <!-- end tribbles -->
+
+<!--       right side blank
+<div class="col-lg-6">
+</div>
+end right side blank	 -->
+
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2>Your Character:</h2>
+			<h2><span id="player-box"></span></h2>
+			<h2><span id="player-box2"></span></h2>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-2">
+		</div>
+		<div class="col-lg-2 attack"></div>
+	</div>
 
 
 
+	<div class="row">
+		<div class="col-lg-8"><span class="defenderChoose"></span><br>
+			<span id="defenderbox"></span>
+			<h2 id="currentOpponent"></h2>
+
+		</div>
 
 
+	</div>
 
+	
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 id="notifications"></h2>
+		</div>
+	</div>
+	
+	<div class="row reset-button">
+		<div class="col-lg-12">
+			<div class="col-lg-2">
 
-	 -->
+		</div>
+			<div class="col-lg-2 reset"></div>
+
+		</div>
+	</div>
+	
 
 </body>
+<script src='assets/javascript/game.js'></script>
+
 </html>

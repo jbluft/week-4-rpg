@@ -1,0 +1,45 @@
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  background: url('../images/space_background.jpg');
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #fff;
+	float: right;
+	padding-right: 100px;
+}
+
+#container {
+	clear: both;
+}
+
+h3, .introText {
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.defenderChoose {
+	font-size: 24px;
+	line-height: 32px;
+	color: #fff;
+	padding: 20px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 32px;
+	color: #fff;
+}
+
+img {
+	width: 100px;
+}
+
+#player-box {
+	padding-top: 20px;
+}
